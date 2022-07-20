@@ -3,6 +3,5 @@ name: Access OnDemand
 category: Access OnDemand
 description: "Access OnDemand\r\n"
 icon: 'fas://magic'
-url: https://accessondemand.com
-new_window: true
-
+url: https://openondemand.org
+new_window: false
