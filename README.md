@@ -3,7 +3,7 @@
 ![GitHub Release](https://img.shields.io/github/release/osc/bc_osc_qgis.svg)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This is a menu item to place on the Navigation Bar of Open OnDemand to link back to the Access OnDemand web portal.
+This is a menu item to display a link back to the Access OnDemand Web portal on the Navigation Bar of Open OnDemand.
 
 ## Install
 
