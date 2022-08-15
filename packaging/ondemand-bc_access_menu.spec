@@ -40,16 +40,16 @@ A single deployment for ACCESS Service Providers to install ACCESS related links
 
 %install
 %__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name1}
-%__cp -a ./. %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name1}/
+%__cp -a ./%{app_name1}/* %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name1}/
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name1}/VERSION
 %__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name2}
-%__cp -a ./. %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name2}/
+%__cp -a ./%{app_name2}/* %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name2}/
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name2}/VERSION
 %__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name3}
-%__cp -a ./. %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name3}/
+%__cp -a ./%{app_name3}/* %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name3}/
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name3}/VERSION
 %__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name4}
-%__cp -a ./. %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name4}/
+%__cp -a ./%{app_name4}/* %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name4}/
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name4}/VERSION
 
 
