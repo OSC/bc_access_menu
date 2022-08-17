@@ -17,8 +17,11 @@ git checkout <tag/branch>
 ```
 
 To activate this menu item on your Open OnDemand Portal, you need to:
-
-```sudo cp -Rf bc_access_menu /var/www/ood/apps/sys/```
+```cd bc_access_menu```
+```sudo cp -Rf bc_access_allocations /var/www/ood/apps/sys/```
+```sudo cp -Rf bc_access_metrics /var/www/ood/apps/sys/```
+```sudo cp -Rf bc_access_operations /var/www/ood/apps/sys/```
+```sudo cp -Rf bc_access_support /var/www/ood/apps/sys/```
 
 To update the app you would:
 
@@ -42,6 +45,6 @@ Again, you do not need to restart the app as it isn't a Passenger app.
 
 * Documentation, website content, and logo is licensed under
   [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
-* Code is licensed under MIT (see LICENSE.txt)o
+* Code is licensed under MIT (see LICENSE.txt)
 
 

@@ -1,17 +1,17 @@
 # Disable debuginfo as it causes issues with bundled gems that build libraries
 %global debug_package %{nil}
 %global repo_name bc_access_menu
-%global app_name1 bc_access_menu_operations
-%global app_name2 bc_access_menu_allocations
-%global app_name3 bc_access_menu_support
-%global app_name4 bc_access_menu_metrics
+%global app_operations bc_access_menu_operations
+%global app_allocations bc_access_menu_allocations
+%global app_support bc_access_menu_support
+%global app_metrics bc_access_menu_metrics
 
 %{!?package_version: %define package_version %{major}.%{minor}.%{patch}}
 %{!?package_release: %define package_release 1}
 %{!?git_tag: %define git_tag v%{package_version}}
 %define git_tag_minus_v %(echo %{git_tag} | sed -r 's/^v//')
 
-Name:     ondemand-%{app_name1}
+Name:     ondemand-%{repo_name}
 Version:  %{package_version}
 Release:  %{package_release}%{?dist}
 Summary:  Batch Connect - ACCESS Menu
@@ -39,27 +39,23 @@ A single deployment for ACCESS Service Providers to install ACCESS related links
 
 
 %install
-%__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name1}
-%__cp -a ./%{app_name1}/* %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name1}/
-echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name1}/VERSION
-%__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name2}
-%__cp -a ./%{app_name2}/* %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name2}/
-echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name2}/VERSION
-%__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name3}
-%__cp -a ./%{app_name3}/* %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name3}/
-echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name3}/VERSION
-%__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name4}
-%__cp -a ./%{app_name4}/* %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name4}/
-echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_name4}/VERSION
+%__cp -Rf ./%{app_operations} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_operations}/VERSION
+%__cp -Rf ./%{app_allocations} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_allocations}/VERSION
+%__cp -Rf ./%{app_support} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_support}/VERSION
+%__cp -Rf ./%{app_metrics} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_metrics}/VERSION
 
 
 %files
 %defattr(-,root,root)
-%{_localstatedir}/www/ood/apps/sys/%{app_name1}
-%{_localstatedir}/www/ood/apps/sys/%{app_name1}/manifest.yml
-%{_localstatedir}/www/ood/apps/sys/%{app_name2}
-%{_localstatedir}/www/ood/apps/sys/%{app_name2}/manifest.yml
-%{_localstatedir}/www/ood/apps/sys/%{app_name3}
-%{_localstatedir}/www/ood/apps/sys/%{app_name3}/manifest.yml
-%{_localstatedir}/www/ood/apps/sys/%{app_name4}
-%{_localstatedir}/www/ood/apps/sys/%{app_name4}/manifest.yml
+%{_localstatedir}/www/ood/apps/sys/%{app_operations}
+%{_localstatedir}/www/ood/apps/sys/%{app_operations}/manifest.yml
+%{_localstatedir}/www/ood/apps/sys/%{app_allocations}
+%{_localstatedir}/www/ood/apps/sys/%{app_allocations}/manifest.yml
+%{_localstatedir}/www/ood/apps/sys/%{app_support}
+%{_localstatedir}/www/ood/apps/sys/%{app_support}/manifest.yml
+%{_localstatedir}/www/ood/apps/sys/%{app_metrics}
+%{_localstatedir}/www/ood/apps/sys/%{app_metrics}/manifest.yml
