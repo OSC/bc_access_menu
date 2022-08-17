@@ -1,7 +1,7 @@
 ---
-name: Allocation
+name: Allocations
 category: ACCESS
-description: "Allocation\r\n"
+description: "Allocations\r\n"
 icon: 'fas://usd'
-url: https://allocations.access.org
+url: https://allocations.access-ci.org
 new_window: true

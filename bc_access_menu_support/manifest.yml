@@ -1,7 +1,7 @@
 ---
-name: Support
+name: Get Support
 category: ACCESS
-description: "Support\r\n"
+description: "Get Support\r\n"
 icon: 'fas://question'
-url: https://support.access.org
+url: https://support.access-ci.org
 new_window: true

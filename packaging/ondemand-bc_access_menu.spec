@@ -1,7 +1,7 @@
 # Disable debuginfo as it causes issues with bundled gems that build libraries
 %global debug_package %{nil}
 %global repo_name bc_access_menu
-%global app_operations bc_access_menu_operations
+%global app_about bc_access_menu_about
 %global app_allocations bc_access_menu_allocations
 %global app_support bc_access_menu_support
 %global app_metrics bc_access_menu_metrics
@@ -39,8 +39,8 @@ A single deployment for ACCESS Service Providers to install ACCESS related links
 
 
 %install
-%__cp -Rf ./%{app_operations} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
-echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_operations}/VERSION
+%__cp -Rf ./%{app_about} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_about}/VERSION
 %__cp -Rf ./%{app_allocations} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_allocations}/VERSION
 %__cp -Rf ./%{app_support} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
@@ -51,8 +51,8 @@ echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_metrics}
 
 %files
 %defattr(-,root,root)
-%{_localstatedir}/www/ood/apps/sys/%{app_operations}
-%{_localstatedir}/www/ood/apps/sys/%{app_operations}/manifest.yml
+%{_localstatedir}/www/ood/apps/sys/%{app_about}
+%{_localstatedir}/www/ood/apps/sys/%{app_about}/manifest.yml
 %{_localstatedir}/www/ood/apps/sys/%{app_allocations}
 %{_localstatedir}/www/ood/apps/sys/%{app_allocations}/manifest.yml
 %{_localstatedir}/www/ood/apps/sys/%{app_support}

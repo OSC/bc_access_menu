@@ -1,7 +1,7 @@
 ---
-name: Metrics
+name: XDMoD Metrics
 category: ACCESS
-description: "Metrics\r\n"
+description: "XDMoD Metrics\r\n"
 icon: 'fas://signal'
-url: https://metrics.access.org
+url: https://metrics.access-ci.org
 new_window: true
