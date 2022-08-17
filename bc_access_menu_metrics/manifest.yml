@@ -2,6 +2,6 @@
 name: Metrics
 category: ACCESS
 description: "Metrics\r\n"
-icon: 'fas://magic'
+icon: 'fas://signal'
 url: https://metrics.access.org
 new_window: true

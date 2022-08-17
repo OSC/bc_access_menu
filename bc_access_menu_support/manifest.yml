@@ -2,6 +2,6 @@
 name: Support
 category: ACCESS
 description: "Support\r\n"
-icon: 'fas://magic'
+icon: 'fas://question'
 url: https://support.access.org
 new_window: true
