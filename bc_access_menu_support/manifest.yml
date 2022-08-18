@@ -1,0 +1,7 @@
+---
+name: Get Support
+category: ACCESS
+description: "Get Support\r\n"
+icon: 'fas://question'
+url: https://support.access-ci.org
+new_window: true
