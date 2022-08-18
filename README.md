@@ -18,10 +18,10 @@ git checkout <tag/branch>
 
 To activate this menu item on your Open OnDemand Portal, you need to:
 ```cd bc_access_menu
-sudo cp -Rf bc_access_about /var/www/ood/apps/sys/
-sudo cp -Rf bc_access_allocations /var/www/ood/apps/sys/
-sudo cp -Rf bc_access_metrics /var/www/ood/apps/sys/
-sudo cp -Rf bc_access_support /var/www/ood/apps/sys/
+sudo cp -Rf bc_access_menu_about /var/www/ood/apps/sys/
+sudo cp -Rf bc_access_menu_allocations /var/www/ood/apps/sys/
+sudo cp -Rf bc_access_menu_metrics /var/www/ood/apps/sys/
+sudo cp -Rf bc_access_menu_support /var/www/ood/apps/sys/
 ```
 
 To update the app you would:
