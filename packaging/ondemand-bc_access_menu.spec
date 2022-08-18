@@ -39,13 +39,24 @@ A single deployment for ACCESS Service Providers to install ACCESS related links
 
 
 %install
-%__cp -Rf ./%{app_about} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+# process the about menu item 
+%__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_about}
+%__cp -Rf ./%{app_about}/. %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_about}
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_about}/VERSION
-%__cp -Rf ./%{app_allocations} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+
+# process the allocations menu item 
+%__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_allocations}
+%__cp -Rf ./%{app_allocations}/. %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_allocations}
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_allocations}/VERSION
-%__cp -Rf ./%{app_support} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+
+# process the support menu item 
+%__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_support}
+%__cp -Rf ./%{app_support}/. %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_support}
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_support}/VERSION
-%__cp -Rf ./%{app_metrics} %{buildroot}%{_localstatedir}/www/ood/apps/sys/
+
+# process the metrics menu item 
+%__mkdir_p %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_metrics}
+%__cp -Rf ./%{app_metrics}/. %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_metrics}
 echo v%{version} > %{buildroot}%{_localstatedir}/www/ood/apps/sys/%{app_metrics}/VERSION
 
 
