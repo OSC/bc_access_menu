@@ -11,9 +11,10 @@ Use Git to clone this app and checkout the desired branch/version you want to
 use:
 
 ```sh
-git clone <repo>
-cd <dir>
-git checkout <tag/branch>
+git clone git@github.com:OSC/bc_access_menu.git
+cd bc_access_menu
+git tag
+git checkout <vN.N.N>
 ```
 
 To activate this menu item on your Open OnDemand Portal, you need to:
@@ -27,7 +28,7 @@ sudo cp -Rf bc_access_menu_support /var/www/ood/apps/sys/
 To update the app you would:
 
 ```sh
-cd <dir>
+cd bc_access_menu
 git fetch
 git checkout <tag/branch>
 ```
