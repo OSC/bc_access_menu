@@ -2,6 +2,6 @@
 name: About ACCESS
 category: ACCESS
 description: "About ACCESS\r\n"
-icon: 'fas://circle-info'
+icon: 'fas://info'
 url: https://access-ci.org
 new_window: true

@@ -2,6 +2,6 @@
 name: Allocations
 category: ACCESS
 description: "Allocations\r\n"
-icon: 'fas://usd'
+icon: 'fas://dollar-sign'
 url: https://allocations.access-ci.org
 new_window: true
