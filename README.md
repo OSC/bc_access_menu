@@ -3,7 +3,7 @@
 ![GitHub Release](https://img.shields.io/github/release/osc/bc_access_menu.svg)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This is a menu item to display links back to the Access OnDemand Web portal within your OnDemand navigation bar.
+This is a menu to display links back to the Access OnDemand Web portal within your OnDemand navigation bar.
 
 ## Pre-Install Configuration
 Prior to installing the menu, you will need to allow the menu to be displayed on the OnDemand NavBar.
@@ -34,3 +34,5 @@ Once the Pre-Install Configuration is completed do the following.
 * Documentation, website content, and logo is licensed under
   [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 * Code is licensed under MIT (see LICENSE.txt)
+
+
