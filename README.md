@@ -1,52 +1,36 @@
-# Batch Connect - Access OnDemand Menu
+# Access OnDemand Menu
 
 ![GitHub Release](https://img.shields.io/github/release/osc/bc_access_menu.svg)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This is a menu item to display a link back to the Access OnDemand Web portal on the Navigation Bar of Open OnDemand.
+This is a menu item to display links back to the Access OnDemand Web portal within your OnDemand navigation bar.
+
+## Pre-Install Configuration
+Prior to installing the menu, you will need to allow the menu to be displayed on the OnDemand NavBar.
+To do so, you will need to follow these instructions.
+
+* ssh to the server that your ondemand instance is running on.
+* Run vi /etc/ood/config/apps/dashboard/initializers/ood.rb and modify the file as explained below.
+* Ensure that the following line is placed in the file.<br />
+  ```NavConfig.categories=['Files','Jobs','Clusters','Interactive Apps','Reports','ACCESS'] ```
+* Save the file and exit vi.
+
+That's it for the prep work.
 
 ## Install
+If you have not completed the Pre-Install Configuration, please do so now.
 
-Use Git to clone this app and checkout the desired branch/version you want to
-use:
+Once the Pre-Install Configuration is completed do the following.
 
-```sh
-git clone git@github.com:OSC/bc_access_menu.git
-cd bc_access_menu
-git tag
-git checkout <vN.N.N>
-```
 
-To activate this menu item on your Open OnDemand Portal, you need to:
-```cd bc_access_menu
-sudo cp -Rf bc_access_menu_about /var/www/ood/apps/sys/
-sudo cp -Rf bc_access_menu_allocations /var/www/ood/apps/sys/
-sudo cp -Rf bc_access_menu_metrics /var/www/ood/apps/sys/
-sudo cp -Rf bc_access_menu_support /var/www/ood/apps/sys/
-```
-
-To update the app you would:
-
-```sh
-cd bc_access_menu
-git fetch
-git checkout <tag/branch>
-```
-
-Again, you do not need to restart the app as it isn't a Passenger app.
-
-## Contributing
-
-1. Fork it ( https://github.com/OSC/bc_access_menu/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+* ssh to the server that your ondemand instance is running on.
+* sudo rpm -Uvh https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm
+* Once the install is completed, continue.
+* Launch or Restart your OnDemand Dashboard
+* Your ACCESS menu should now be a part of your OnDemand NavBar.
 
 ## License
 
 * Documentation, website content, and logo is licensed under
   [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 * Code is licensed under MIT (see LICENSE.txt)
-
-
