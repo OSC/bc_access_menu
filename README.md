@@ -26,8 +26,9 @@ Once the Pre-Install Configuration is completed do the following.
 
 On your OnDemand host, run<br /><br />
 ```sudo rpm -Uvh https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
-<br /><br />**Once the install is completed...**
-- Launch or Restart your OnDemand Dashboard
+
+## Post Install
+ After installation, you will need to ```Launch or Restart your OnDemand Dashboard```.
 
 Your ACCESS menu should now be a part of your OnDemand NavBar.
 
@@ -36,3 +37,5 @@ Your ACCESS menu should now be a part of your OnDemand NavBar.
 * Documentation, website content, and logo is licensed under
   [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 * Code is licensed under MIT (see LICENSE.txt)
+
+
