@@ -3,7 +3,7 @@
 ![GitHub Release](https://img.shields.io/github/release/osc/bc_access_menu.svg)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This is a menu to display links back to the Access OnDemand Web portal within your OnDemand navigation bar.
+This is a menu to display links back to sections of the main ACCESS web page.
 
 ## Pre-Install Configuration
 Prior to installing the menu, you will need to allow the menu to be displayed on the OnDemand NavBar.
@@ -31,6 +31,8 @@ On your OnDemand host, run<br /><br />
  After installation, you will need to ```Launch or Restart your OnDemand Dashboard```.
 
 Your ACCESS menu should now be a part of your OnDemand NavBar.
+
+![ACCESS OnDemand Menu](https://raw.githubusercontent.com/OSC/bc_access_menu/gerald-byrket-patch-1/access_ondemand.PNG)
 
 ## License
 
