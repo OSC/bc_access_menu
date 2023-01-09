@@ -32,6 +32,8 @@ On your OnDemand host, run<br /><br />
 
 Your ACCESS menu should now be a part of your OnDemand NavBar.
 
+![ACCESS OnDemand Menu](https://raw.githubusercontent.com/OSC/bc_access_menu/gerald-byrket-patch-1/access_ondemand.PNG)
+
 ## License
 
 * Documentation, website content, and logo is licensed under
