@@ -5,34 +5,27 @@
 
 This is a menu to display links back to sections of the main ACCESS web page.
 
-## Pre-Install Configuration
-Prior to installing the menu, you will need to allow the menu to be displayed on the OnDemand NavBar.
-
-To do so, you will need to follow these instructions.
-
-
-That's it for the prep work.
+## Requirements
+The ACCESS OnDemand menu depends on you having Open OnDemand 2.x installed.
 
 ## Install
-If you have not completed the Pre-Install Configuration, please do so now.
-
-Once the Pre-Install Configuration is completed do the following.
-
-
 On your OnDemand host, run<br /><br />
 ```sudo rpm -Uvh https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
 
 ## Post Install
- You have installed the menu, now you need to make it visible in the Navbar. To do so.
- 
+You have installed the menu, now you need to make it visible in the Navbar.
+
+### If you **HAVE NOT** customized your OnDemand navbar, you will need to do the following
 Add
 ```NavConfig.categories=['Files','Jobs','Clusters','Interactive Apps','Reports','ACCESS'] ``` 
 <br />
 to **/etc/ood/config/apps/dashboard/initializers/ood.rb** on your OnDemand host.
 
-After installation, you will need to ```Launch or Restart your OnDemand Dashboard```.
+### If you **HAVE** customized your OnDemand navbar, you will need to do the following.
+Modify **/etc/ood/config/apps/dashboard/initializers/ood.rb** and add 'ACCESS' to your NavConfig.categories array.
 
-Your ACCESS menu should now be a part of your OnDemand NavBar.
+
+There is nothing else to do.  Your users willsee the "ACCESS" menu the next time they login to OnDemand.
 
 ![ACCESS OnDemand Menu](https://github.com/OSC/bc_access_menu/blob/main/access_ondemand.PNG)
 
