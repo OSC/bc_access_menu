@@ -17,8 +17,8 @@ On your OnDemand host, run<br /><br />
 #### For RHEL7 or equivalent
 ```sudo yum install https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
 
-#### All others
-```sudo rpm -Uvh https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
+#### Ubuntu
+COMING SOON...
 
 ## Post Install
 You have installed the menu, now you need to make it visible in the Navbar.
