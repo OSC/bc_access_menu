@@ -10,11 +10,6 @@ Prior to installing the menu, you will need to allow the menu to be displayed on
 
 To do so, you will need to follow these instructions.
 
-Add
-<br /><br />
-```NavConfig.categories=['Files','Jobs','Clusters','Interactive Apps','Reports','ACCESS'] ``` 
-<br /><br />
-to **/etc/ood/config/apps/dashboard/initializers/ood.rb** on your OnDemand host.
 
 That's it for the prep work.
 
@@ -28,7 +23,14 @@ On your OnDemand host, run<br /><br />
 ```sudo rpm -Uvh https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
 
 ## Post Install
- After installation, you will need to ```Launch or Restart your OnDemand Dashboard```.
+ You have installed the menu, now you need to make it visible in the Navbar. To do so.
+ 
+Add
+```NavConfig.categories=['Files','Jobs','Clusters','Interactive Apps','Reports','ACCESS'] ``` 
+<br />
+to **/etc/ood/config/apps/dashboard/initializers/ood.rb** on your OnDemand host.
+
+After installation, you will need to ```Launch or Restart your OnDemand Dashboard```.
 
 Your ACCESS menu should now be a part of your OnDemand NavBar.
 
