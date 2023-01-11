@@ -15,7 +15,7 @@ On your OnDemand host, run<br /><br />
 ```sudo dnf install https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
 
 #### For RHEL7 or equivalent
-```sudo yum install https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
+```sudo yum install https://yum.osc.edu/ondemand/latest/web/el7/x86_64/ondemand-bc_access_menu-1.0.2-1.el7.x86_64.rpm```
 
 #### Ubuntu
 COMING SOON...
