@@ -10,6 +10,13 @@ The ACCESS OnDemand menu depends on you having Open OnDemand 2.x installed.
 
 ## Install
 On your OnDemand host, run<br /><br />
+#### For RHEL8 or equivalent
+```sudo dnf install https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
+
+#### For RHEL7 or equivalent
+```sudo yum install https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
+
+#### All others
 ```sudo rpm -Uvh https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
 
 ## Post Install
