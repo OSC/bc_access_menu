@@ -21,7 +21,7 @@ License:  MIT
 URL:      https://github.com/OSC/%{repo_name}
 Source0:  https://github.com/OSC/%{repo_name}/archive/%{git_tag}.tar.gz
 
-Requires: ondemand
+Requires: ondemand >= 2.0.0
 
 # Disable automatic dependencies as it causes issues with bundled gems and
 # node.js packages used in the apps

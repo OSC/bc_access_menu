@@ -5,32 +5,35 @@
 
 This is a menu to display links back to sections of the main ACCESS web page.
 
-## Pre-Install Configuration
-Prior to installing the menu, you will need to allow the menu to be displayed on the OnDemand NavBar.
-
-To do so, you will need to follow these instructions.
-
-Add
-<br /><br />
-```NavConfig.categories=['Files','Jobs','Clusters','Interactive Apps','Reports','ACCESS'] ``` 
-<br /><br />
-to **/etc/ood/config/apps/dashboard/initializers/ood.rb** on your OnDemand host.
-
-That's it for the prep work.
+## Requirements
+**The ACCESS OnDemand menu depends on your having Open OnDemand 2.x installed.**
+<p>To install Open OnDemand 2.x, please use https://osc.github.io/ood-documentation/latest/installation.html</p>
 
 ## Install
-If you have not completed the Pre-Install Configuration, please do so now.
-
-Once the Pre-Install Configuration is completed do the following.
-
-
 On your OnDemand host, run<br /><br />
-```sudo rpm -Uvh https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
+#### For RHEL8 or equivalent
+```sudo dnf install https://yum.osc.edu/ondemand/latest/web/el8/x86_64/ondemand-bc_access_menu-1.0.2-1.el8.x86_64.rpm```
+
+#### For RHEL7 or equivalent
+```sudo yum install https://yum.osc.edu/ondemand/latest/web/el7/x86_64/ondemand-bc_access_menu-1.0.2-1.el7.x86_64.rpm```
+
+#### Ubuntu
+COMING SOON...
 
 ## Post Install
- After installation, you will need to ```Launch or Restart your OnDemand Dashboard```.
+You have installed the menu, now you need to make it visible in the Navbar.
 
-Your ACCESS menu should now be a part of your OnDemand NavBar.
+### If you **HAVE NOT** customized your OnDemand navbar, you will need to
+Add
+```NavConfig.categories=['Files','Jobs','Clusters','Interactive Apps','Reports','ACCESS'] ``` 
+<br />
+to **/etc/ood/config/apps/dashboard/initializers/ood.rb** on your OnDemand host.
+
+### If you **HAVE** customized your OnDemand navbar, you will need to
+Modify **/etc/ood/config/apps/dashboard/initializers/ood.rb** and add 'ACCESS' to your NavConfig.categories array.
+
+
+### Your users will see the "ACCESS" menu the next time they login to OnDemand.
 
 ![ACCESS OnDemand Menu](https://github.com/OSC/bc_access_menu/blob/main/access_ondemand.PNG)
 
