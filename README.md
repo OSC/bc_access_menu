@@ -33,7 +33,7 @@ to **/etc/ood/config/apps/dashboard/initializers/ood.rb** on your OnDemand host.
 Modify **/etc/ood/config/apps/dashboard/initializers/ood.rb** and add 'ACCESS' to your NavConfig.categories array.
 
 
-### There is nothing else to do.  Your users will see the "ACCESS" menu the next time they login to OnDemand.
+### Your users will see the "ACCESS" menu the next time they login to OnDemand.
 
 ![ACCESS OnDemand Menu](https://github.com/OSC/bc_access_menu/blob/main/access_ondemand.PNG)
 
