@@ -6,7 +6,8 @@
 This is a menu to display links back to sections of the main ACCESS web page.
 
 ## Requirements
-The ACCESS OnDemand menu depends on you having Open OnDemand 2.x installed.
+<p>The ACCESS OnDemand menu depends on you having Open OnDemand 2.x installed.</p>
+<p>To install Open OnDemand 2.x, please use https://osc.github.io/ood-documentation/latest/installation.html</p>
 
 ## Install
 On your OnDemand host, run<br /><br />
@@ -32,7 +33,7 @@ to **/etc/ood/config/apps/dashboard/initializers/ood.rb** on your OnDemand host.
 Modify **/etc/ood/config/apps/dashboard/initializers/ood.rb** and add 'ACCESS' to your NavConfig.categories array.
 
 
-There is nothing else to do.  Your users willsee the "ACCESS" menu the next time they login to OnDemand.
+####There is nothing else to do.  Your users will see the "ACCESS" menu the next time they login to OnDemand.
 
 ![ACCESS OnDemand Menu](https://github.com/OSC/bc_access_menu/blob/main/access_ondemand.PNG)
 
